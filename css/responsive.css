@@ -22,7 +22,7 @@
     }
     
     #servicos a.destaque .img-container img {
-        max-height: 120;
+        max-height: 120px;
     }
 
 }
