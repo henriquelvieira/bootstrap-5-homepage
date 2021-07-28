@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
 
     }
 
+    //ISOTOPE
     let btns = $("#servicos .button-group button");
 
     btns.click(function (e) {
@@ -28,8 +29,19 @@ jQuery(document).ready(function($) {
         $("#servicos .grid").isotope({
             filter: "*",
         });
-    })
+    });
 
+    //MAGNIFIC-POPUP
+
+    $(".grid .popup-link").magnificPopup({
+        type: "image",
+        gallery: {
+            enabled: true,
+            tPrev: "Anterior",
+            tNext: "Próxima",
+            tCounter: "%curr% de %total%",
+        },
+    });
 
 }
 );
